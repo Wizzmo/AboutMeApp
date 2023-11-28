@@ -31,9 +31,15 @@ final class LoginViewController: UIViewController {
     }
     
     // MARK: Work with segues
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+    override func shouldPerformSegue(
+        withIdentifier identifier: String,
+        sender: Any?
+    ) -> Bool {
         guard userNameTF.text == username, passwordTF.text == password else {
-            showAlert(withTitle: "Invalid login or password", andMessage: "Please, enter correct login and password")
+            showAlert(
+                withTitle: "Invalid login or password",
+                andMessage: "Please, enter correct login and password"
+            )
             return false
         }
         return true
@@ -60,8 +66,15 @@ final class LoginViewController: UIViewController {
     
     // MARK: Private Methods
     private func showAlert(withTitle title: String, andMessage message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        let okAction = UIAlertAction(
+            title: "OK",
+            style: .default
+        ) { _ in
             self.passwordTF.text = ""
         }
         alert.addAction(okAction)
