@@ -9,14 +9,16 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
-    private let username = "1"
-    private let password = "1"
-
-    
+    // MARK: Outlets
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     @IBOutlet var logInButton: UIButton!
     
+    // MARK: Private Properties
+    private let username = "1"
+    private let password = "1"
+    
+    // MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         logInButton.layer.cornerRadius = 10
@@ -29,12 +31,9 @@ final class LoginViewController: UIViewController {
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard userNameTF.text == username, passwordTF.text == password else {
-            // Введенное имя не валидно, отменяем переход и показываем алерт контроллер
             showAlert(withTitle: "Invalid login or password", andMessage: "Please, enter correct login and password")
             return false
         }
-        
-        // Введенное имя валидно, разрешаем переход
         return true
     }
     
@@ -43,10 +42,7 @@ final class LoginViewController: UIViewController {
         welcomeVC?.welcomeLabelValue = "Welcome, \(userNameTF.text ?? "")"
     }
     
-    @IBAction func logInButtonTapped() {
-
-    }
-    
+    // MARK: IB Actions
     @IBAction func remindUserNameButtonTapped(_ sender: UIButton) {
         showAlert(withTitle: "Oops!", andMessage: "Your name is \(username) 😉")
     }

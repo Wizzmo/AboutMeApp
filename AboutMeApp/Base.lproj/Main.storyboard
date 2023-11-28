@@ -41,7 +41,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="logInButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="wiQ-3h-4Iu"/>
                                                     <segue destination="f6k-9E-y44" kind="presentation" modalPresentationStyle="fullScreen" id="SS3-zn-xbJ"/>
                                                 </connections>
                                             </button>
