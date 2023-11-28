@@ -56,7 +56,8 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
     
     private func showAlert(withTitle title: String, andMessage message: String) {

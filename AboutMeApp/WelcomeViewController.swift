@@ -17,8 +17,4 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         welcomeLabel.text = welcomeLabelValue
     }
-    
-    @IBAction func logOutAction() {
-        dismiss(animated: true)
-    }
 }

@@ -127,8 +127,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="logOutAction" destination="f6k-9E-y44" eventType="touchUpInside" id="P3M-ec-0jf"/>
-                                    <segue destination="YWN-21-BWd" kind="unwind" unwindAction="unwindFor:" id="hmg-Rd-Uxb"/>
+                                    <segue destination="YWN-21-BWd" kind="unwind" unwindAction="unwindFor:" id="uTt-kJ-xtm"/>
                                 </connections>
                             </button>
                         </subviews>
