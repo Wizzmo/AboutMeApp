@@ -12,4 +12,9 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func logOutAction() {
+        dismiss(animated: true)
+    }
+    
 }

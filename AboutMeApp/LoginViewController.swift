@@ -9,8 +9,8 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
-    private let controlUserName = "1"
-    private let controlPassword = "1"
+    private let username = "1"
+    private let password = "1"
 
     
     @IBOutlet var userNameTF: UITextField!
@@ -25,6 +25,16 @@ final class LoginViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
     }
+    
+//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+//        guard userNameTF.text == username, passwordTF.text == password else {
+//            // Введенное имя не валидно, отменяем переход и показываем алерт контроллер
+//            return false
+//        }
+//        
+//        // Введенное имя валидно, разрешаем переход
+//        return true
+//    }
     
     @IBAction func logInButtonTapped() {
 

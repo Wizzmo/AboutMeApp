@@ -42,6 +42,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="logInButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="wiQ-3h-4Iu"/>
+                                                    <segue destination="f6k-9E-y44" kind="presentation" modalPresentationStyle="fullScreen" id="SS3-zn-xbJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -102,7 +103,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="06e-4j-hRy">
-                                <rect key="frame" x="40" y="179" width="313" height="145.33333333333337"/>
+                                <rect key="frame" x="40" y="120.00000000000001" width="313" height="145.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7U-n1-3KN">
                                         <rect key="frame" x="121.66666666666666" y="0.0" width="69.666666666666657" height="33.666666666666664"/>
@@ -119,12 +120,15 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXs-YP-BFk">
-                                <rect key="frame" x="40" y="657.66666666666663" width="313" height="40.333333333333371"/>
+                                <rect key="frame" x="40" y="691.66666666666663" width="313" height="40.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log out">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="logOutAction" destination="f6k-9E-y44" eventType="touchUpInside" id="P3M-ec-0jf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2BU-1M-Byb"/>
