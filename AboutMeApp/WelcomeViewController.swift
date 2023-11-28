@@ -9,10 +9,13 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
+    // MARK: IB Outlets
     @IBOutlet var welcomeLabel: UILabel!
     
+    // MARK: Public Properties
     var welcomeLabelValue: String!
     
+    // MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeLabel.text = welcomeLabelValue
