@@ -24,6 +24,7 @@ final class LoginViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -47,16 +48,22 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func remindUserNameButtonTapped(_ sender: UIButton) {
-        showAlert(withTitle: "Oops!", andMessage: "Your name is 1 😉")
+        showAlert(withTitle: "Oops!", andMessage: "Your name is \(username) 😉")
     }
     
     @IBAction func remindPasswordButtonTapped(_ sender: UIButton) {
-        showAlert(withTitle: "Oops!", andMessage: "Your password is 1 😉")
+        showAlert(withTitle: "Oops!", andMessage: "Your password is \(password) 😉")
+    }
+    
+    @IBAction override func unwind(for segue: UIStoryboardSegue) {
+        <#code#>
     }
     
     private func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.passwordTF.text = ""
+        }
         alert.addAction(okAction)
         present(alert, animated: true)
     }
