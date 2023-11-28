@@ -8,6 +8,9 @@
 import UIKit
 
 final class LoginViewController: UIViewController {
+    
+    private let controlUserName = "1"
+    private let controlPassword = "1"
 
     
     @IBOutlet var userNameTF: UITextField!
@@ -19,9 +22,13 @@ final class LoginViewController: UIViewController {
         logInButton.layer.cornerRadius = 10
     }
     
-    @IBAction func logInButtonTapped() {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
     }
     
+    @IBAction func logInButtonTapped() {
+
+    }
     
     @IBAction func remindUserNameButtonTapped(_ sender: UIButton) {
         showAlert(withTitle: "Oops!", andMessage: "Your name is 1 😉")
