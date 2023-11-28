@@ -23,7 +23,7 @@ final class LoginViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super .touchesBegan(touches, with: event)
+        super.touchesBegan(touches, with: event)
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -35,6 +35,11 @@ final class LoginViewController: UIViewController {
         
         // Введенное имя валидно, разрешаем переход
         return true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let welcomeVC = segue.destination as? WelcomeViewController
+        welcomeVC?.welcomeLabelValue = "Welcome, \(userNameTF.text ?? "")"
     }
     
     @IBAction func logInButtonTapped() {
