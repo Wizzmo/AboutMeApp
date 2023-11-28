@@ -26,15 +26,16 @@ final class LoginViewController: UIViewController {
         super .touchesBegan(touches, with: event)
     }
     
-//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-//        guard userNameTF.text == username, passwordTF.text == password else {
-//            // Введенное имя не валидно, отменяем переход и показываем алерт контроллер
-//            return false
-//        }
-//        
-//        // Введенное имя валидно, разрешаем переход
-//        return true
-//    }
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        guard userNameTF.text == username, passwordTF.text == password else {
+            // Введенное имя не валидно, отменяем переход и показываем алерт контроллер
+            showAlert(withTitle: "Invalid login or password", andMessage: "Please, enter correct login and password")
+            return false
+        }
+        
+        // Введенное имя валидно, разрешаем переход
+        return true
+    }
     
     @IBAction func logInButtonTapped() {
 
