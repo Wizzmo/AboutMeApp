@@ -36,6 +36,9 @@
                                                 <rect key="frame" x="0.0" y="100" width="295" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Log In"/>
+                                                <connections>
+                                                    <action selector="logInButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="wiQ-3h-4Iu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -48,6 +51,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="12"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="remindUserNameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bBg-pC-mDz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4Q-lg-tvG">
                                                 <rect key="frame" x="147.5" y="0.0" width="147.5" height="28.5"/>
@@ -55,6 +61,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?" subtitle="">
                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="12"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="remindPasswordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J2K-aK-ykY"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -70,6 +79,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TKd-WQ-zX3" secondAttribute="bottom" multiplier="5:3" id="v2M-Cq-CS8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logInButton" destination="y3c-nM-t1o" id="cmK-91-n4b"/>
+                        <outlet property="passwordTF" destination="T1p-OB-Zkb" id="6rK-6r-7cL"/>
+                        <outlet property="userNameTF" destination="LQn-JL-cb6" id="igO-2o-0Rg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
