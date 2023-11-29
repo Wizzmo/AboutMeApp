@@ -46,8 +46,8 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let welcomeVC = segue.destination as? WelcomeViewController
-        welcomeVC?.welcomeLabelValue = "Welcome, \(userNameTF.text ?? "")"
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.welcomeLabelValue = username
     }
     
     // MARK: IB Actions
