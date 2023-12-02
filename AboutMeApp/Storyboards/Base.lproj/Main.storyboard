@@ -151,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="1546" y="3"/>
         </scene>
-        <!--Max Makrov-->
+        <!--View Controller-->
         <scene sceneID="87F-Xj-ND6">
             <objects>
                 <viewController id="zwi-LT-hhe" sceneMemberID="viewController">
@@ -161,11 +161,13 @@
                         <viewLayoutGuide key="safeArea" id="oKr-ju-f86"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Max Makrov" image="person.crop.circle.fill" catalog="system" id="L24-3m-4N2"/>
+                    <navigationItem key="navigationItem" id="ly8-zt-kk9">
+                        <barButtonItem key="rightBarButtonItem" title="Bio" id="03a-gR-LgY"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxg-Rw-MS2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1545" y="805"/>
+            <point key="canvasLocation" x="2542.5" y="804.92957746478874"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oDP-i3-owY">
@@ -179,12 +181,31 @@
                     </tabBar>
                     <connections>
                         <segue destination="f6k-9E-y44" kind="relationship" relationship="viewControllers" id="Ie9-Fq-Nsm"/>
-                        <segue destination="zwi-LT-hhe" kind="relationship" relationship="viewControllers" id="sj9-Mz-th9"/>
+                        <segue destination="bai-qD-Bu1" kind="relationship" relationship="viewControllers" id="sj9-Mz-th9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80D-07-gEQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="819.08396946564881" y="2.8169014084507045"/>
+        </scene>
+        <!--Max Makrov-->
+        <scene sceneID="BOf-Gz-bVq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bai-qD-Bu1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Max Makrov" image="person.crop.circle.fill" catalog="system" id="L24-3m-4N2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="oGI-Xz-M7C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zwi-LT-hhe" kind="relationship" relationship="rootViewController" id="tae-6W-T3B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBg-TG-WXc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1545" y="804.92957746478874"/>
         </scene>
     </scenes>
     <resources>
