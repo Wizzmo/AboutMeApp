@@ -131,7 +131,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2BU-1M-Byb"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
                             <constraint firstItem="06e-4j-hRy" firstAttribute="top" secondItem="2BU-1M-Byb" secondAttribute="top" constant="120" id="1LG-xy-0ZT"/>
                             <constraint firstItem="2BU-1M-Byb" firstAttribute="trailing" secondItem="06e-4j-hRy" secondAttribute="trailing" constant="40" id="6Un-o2-vbM"/>
@@ -165,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxg-Rw-MS2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="737"/>
+            <point key="canvasLocation" x="1545" y="805"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oDP-i3-owY">
@@ -173,6 +173,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oGr-46-ACu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JlS-vB-4se">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -194,11 +195,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

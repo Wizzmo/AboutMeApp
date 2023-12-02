@@ -18,6 +18,8 @@ final class LoginViewController: UIViewController {
     private let username = "1"
     private let password = "1"
     
+    private let users = User.getUsers()
+    
     // MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
