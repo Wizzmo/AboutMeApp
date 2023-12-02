@@ -26,6 +26,12 @@ final class AboutMeViewController: UIViewController {
         alpha: 1
     )
     
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var surnameLabel: UILabel!
+    @IBOutlet var companyLabel: UILabel!
+    @IBOutlet var departmentLabel: UILabel!
+    @IBOutlet var jobTitleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)

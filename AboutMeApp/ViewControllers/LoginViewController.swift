@@ -15,10 +15,10 @@ final class LoginViewController: UIViewController {
     @IBOutlet var logInButton: UIButton!
     
     // MARK: Private Properties
+    private let users = User.getUsers()
+    
     private let username = "1"
     private let password = "1"
-    
-    private let users = User.getUsers()
     
     // MARK: View Life Cycle
     override func viewDidLoad() {
@@ -54,8 +54,6 @@ final class LoginViewController: UIViewController {
         tabBarVC?.viewControllers?.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.welcomeLabelValue = username
-            } else if let aboutMeVC = viewController as? AboutMeViewController {
-                
             }
         }
     }
