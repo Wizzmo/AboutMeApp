@@ -49,8 +49,15 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.welcomeLabelValue = username
+        let tabBarVC = segue.destination as? UITabBarController
+        
+        tabBarVC?.viewControllers?.forEach { viewController in
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.welcomeLabelValue = username
+            } else if let aboutMeVC = viewController as? AboutMeViewController {
+                
+            }
+        }
     }
     
     // MARK: IB Actions
