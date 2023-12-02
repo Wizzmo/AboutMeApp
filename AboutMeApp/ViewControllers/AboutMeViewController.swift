@@ -18,6 +18,7 @@ final class AboutMeViewController: UIViewController {
     // MARK: Public Properties
     var user: User!
     
+    // MARK: Public Properties
     private let primaryColor = UIColor(
         red: 210/255,
         green: 109/255,
@@ -32,6 +33,7 @@ final class AboutMeViewController: UIViewController {
         alpha: 1
     )
     
+    // MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)

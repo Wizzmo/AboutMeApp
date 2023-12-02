@@ -12,10 +12,10 @@ final class WelcomeViewController: UIViewController {
     // MARK: IB Outlets
     @IBOutlet var welcomeLabel: UILabel!
     
-    
     // MARK: Public Properties
     var user: User!
     
+    // MARK: Private Properties
     private let primaryColor = UIColor(
         red: 210/255,
         green: 109/255,
