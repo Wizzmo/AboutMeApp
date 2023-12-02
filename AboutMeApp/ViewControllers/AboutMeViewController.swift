@@ -9,8 +9,14 @@ import UIKit
 
 final class AboutMeViewController: UIViewController {
     
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var surnameLabel: UILabel!
+    @IBOutlet var companyLabel: UILabel!
+    @IBOutlet var departmentLabel: UILabel!
+    @IBOutlet var jobTitleLabel: UILabel!
+    
     // MARK: Public Properties
-    var welcomeLabelValue: String!
+    var user: User!
     
     private let primaryColor = UIColor(
         red: 210/255,
@@ -26,14 +32,13 @@ final class AboutMeViewController: UIViewController {
         alpha: 1
     )
     
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var surnameLabel: UILabel!
-    @IBOutlet var companyLabel: UILabel!
-    @IBOutlet var departmentLabel: UILabel!
-    @IBOutlet var jobTitleLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        nameLabel.text = user.person.name
+        surnameLabel.text = user.person.surname
+        companyLabel.text = user.person.compamy
+        departmentLabel.text = user.person.department
+        jobTitleLabel.text = user.person.jobTitle
     }
 }
