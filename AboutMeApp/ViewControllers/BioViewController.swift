@@ -22,6 +22,8 @@ final class BioViewController: UIViewController {
         blue: 230/255,
         alpha: 1
     )
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
