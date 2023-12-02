@@ -151,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="1546" y="3"/>
         </scene>
-        <!--View Controller-->
+        <!--Max Makarov-->
         <scene sceneID="87F-Xj-ND6">
             <objects>
                 <viewController id="zwi-LT-hhe" sceneMemberID="viewController">
@@ -161,13 +161,34 @@
                         <viewLayoutGuide key="safeArea" id="oKr-ju-f86"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ly8-zt-kk9">
-                        <barButtonItem key="rightBarButtonItem" title="Bio" id="03a-gR-LgY"/>
+                    <navigationItem key="navigationItem" title="Max Makarov" id="ly8-zt-kk9">
+                        <barButtonItem key="backBarButtonItem" title="Max Makarov" id="OJZ-GM-tMT"/>
+                        <barButtonItem key="rightBarButtonItem" title="Bio" id="03a-gR-LgY">
+                            <connections>
+                                <segue destination="fOY-Eb-FGH" kind="show" id="kxM-Mk-k5K"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxg-Rw-MS2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2542.5" y="804.92957746478874"/>
+        </scene>
+        <!--Max Makarov Bio-->
+        <scene sceneID="Bhs-7d-b32">
+            <objects>
+                <viewController id="fOY-Eb-FGH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hO3-4c-1PH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4Rz-0m-iMh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Max Makarov Bio" id="dLg-55-OSJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yyl-Dm-ure" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3279" y="805"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oDP-i3-owY">
